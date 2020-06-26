@@ -80,7 +80,7 @@ video.video {
     }
   }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     .main-container{
         width: 80%;
         margin-left: auto;
@@ -92,6 +92,9 @@ video.video {
     }
     .video-container{
         display: none;
+    }
+    #canvas1{
+        opacity: 0;
     }
    
   }

@@ -1,5 +1,6 @@
 // https://www.youtube.com/watch?v=H-9jCNhLe-Q
 const particles =[];
+let x1, x2, x3, x4,x5, y1, y2, y3, y4, y5;
 
 function setup(){
     let cnv = createCanvas(window.innerWidth, window.innerHeight);
@@ -17,7 +18,28 @@ function draw(){
         p.draw();
         p.checkParticle(particles.slice(index));
     });
+    console.log(frameCount);
+    
+    if (frameCount % 60 == 0){
+        x1= random(width*0.85, width*0.95);
+        x2 = random(width*0.85, width*0.95);
+        x3 = random(0,width*0.10);
+        x4 = random(0,width*0.10);
+        x5=  random(width);
 
+        y1 = random(height);
+        y2 = random(height);
+        y3 = random(height);
+        y4 = random(height);
+        y5 = random(height*0.90,height);
+    }
+        textSize(32);
+        fill('rgba(70, 204, 204, 0.5)')
+        text("HTML", x1, y1, 70, 80);
+        text("CSS", x2, y2, 70, 80);
+        text("JavaScript", x3, y3, 70, 80);
+        text("Bootstrap", x4, y4, 70, 80);
+         text("SAAS", x5, y5, 70, 80);
 }
 
 class Particle{
