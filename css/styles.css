@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    /* overflow: hidden; */
 }
 /* this is the container that wraps the content in main page */
 .main-container{
@@ -29,6 +30,8 @@
     border: 1px solid #08bbbb;
 }
 h1{
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
     font-size: 2.3rem;
     font-weight: normal;
 }
@@ -53,6 +56,17 @@ video.video {
     /* display: none; */
   }
 
+
+  /* positioning the p5js design */
+#canvas1{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    display: none;
+}
 /* making the page responsive  */
 @media only screen and (max-width: 1000px) {
     .main-container{
