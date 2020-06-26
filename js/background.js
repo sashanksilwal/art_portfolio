@@ -26,7 +26,6 @@ function draw(){
         x2 = random(width*0.85, width*0.95);
         x3 = random(0,width*0.10);
        
-
         y1 = random(height);
         y2 = random(height);
         y3 = random(height);
@@ -34,9 +33,10 @@ function draw(){
     }
     if (frameCount % 60 == 0){
         x4 = random(0,width*0.10);
-        x5=  random(width);
+        x5=  random(width*0.95);
+
         y4 = random(height);
-        y5 = random(height*0.90,height);
+        y5 = random(height*0.85,height*0.98);
     }
         textSize(32);
         fill('rgba(70, 204, 204, 0.5)')

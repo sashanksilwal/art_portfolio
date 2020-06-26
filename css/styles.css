@@ -3,6 +3,7 @@
     margin: 0;
     /* overflow: hidden; */
 }
+
 /* this is the container that wraps the content in main page */
 .main-container{
     width: 65%;
@@ -12,7 +13,6 @@
     font-weight: 00;
     margin-top: 10%;
     line-height: 1.3;
-    
 }
 .boxlink{
     text-decoration: none;
@@ -114,19 +114,19 @@ video.video {
   }
 
 
-  /* about page starts here */
+  /* ----------about page starts here--------- */
+
   .stick{
     background-color: white;
-    position: -webkit-sticky; /* Safari */
+    /* width: 110%; */
+    position: -webkit-sticky; 
     position: sticky;
     top: 0;
   }
   .gallery-container{
     width: 100%;
-    /* height: 50%; */
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 3% auto;
     z-index: -1;
   }
    
@@ -135,5 +135,5 @@ video.video {
     height: 50%;
   }
 .description{
-    margin-bottom: 2%;
+    margin-bottom: 4%;
 }
