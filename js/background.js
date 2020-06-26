@@ -1,4 +1,4 @@
-// https://www.youtube.com/watch?v=H-9jCNhLe-Q
+// took inspiration from: https://www.youtube.com/watch?v=H-9jCNhLe-Q
 const particles =[];
 let x1, x2, x3, x4,x5, y1, y2, y3, y4, y5;
 
@@ -20,16 +20,21 @@ function draw(){
     });
     console.log(frameCount);
     
-    if (frameCount % 60 == 0){
+    //to change the position of the text after 60 frames
+    if (frameCount % 80 == 0){
         x1= random(width*0.85, width*0.95);
         x2 = random(width*0.85, width*0.95);
         x3 = random(0,width*0.10);
-        x4 = random(0,width*0.10);
-        x5=  random(width);
+       
 
         y1 = random(height);
         y2 = random(height);
         y3 = random(height);
+        
+    }
+    if (frameCount % 60 == 0){
+        x4 = random(0,width*0.10);
+        x5=  random(width);
         y4 = random(height);
         y5 = random(height*0.90,height);
     }
