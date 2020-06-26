@@ -140,7 +140,7 @@ video.video {
         display: none;
     }
     #canvas1{
-        opacity: 0;
+        display: none;
     }
    
   }
@@ -166,6 +166,7 @@ video.video {
     height: 50%;
   }
 .description{
+    margin-top: 2%;
     margin-bottom: 4%;
 }
 
