@@ -83,13 +83,13 @@ video.video {
     position: absolute;
     z-index: -1000;
     opacity:0;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
     -webkit-transition: opacity 0.5s;
     /* display: none; */
   }
 
 
-  /* positioning the p5js design */
+/* positioning the p5js design */
 #canvas1{
     position: absolute;
     left:0;
@@ -97,7 +97,9 @@ video.video {
     width: 100%;
     height: 100%;
     z-index: -100;
-    display: none;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
 }
 /* making the page responsive  */
 @media only screen and (min-width: 1000px) {
@@ -110,7 +112,8 @@ video.video {
     h1{
         font-size: 2.1rem;
     }
-  }
+}
+
 @media only screen and (max-width: 1000px) {
     .main-container{
         /* width: 80%; */
@@ -121,7 +124,7 @@ video.video {
     h1{
         font-size: 1.7rem;
     }
-  }
+}
 
 @media only screen and (max-width: 700px) {
     .main-container{
@@ -141,7 +144,6 @@ video.video {
     }
    
   }
-
 
   /* ----------about page starts here--------- */
 
@@ -166,3 +168,5 @@ video.video {
 .description{
     margin-bottom: 4%;
 }
+
+/* --------------Projects Start here ----------------- */
