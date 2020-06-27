@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/styles.css"></head>
 <body>
     
 
-    <div class="main-container">
+    <div class="main-container about-container">
         <h1 class="stick">
             <br>
             This is 
@@ -21,17 +21,51 @@
             ’s web designs. 
         </h1>
         <br>
-        <div class="gallery-container">
-                   
+        <div class="carousel">
+            <button class="carousel_button button--left is-hidden">
+                <img src="assets/images/left.png" alt="" srcset="">
+            </button>
+            <div class="carousle_track-container">
+                <ul class = "carousel_track">
+                    <li class="carousel_slide current-slide">
+                        <img class="carousel_image" src="assets/images/comic/1.png" alt="" srcset="">
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="assets/images/comic/2.png" alt="" srcset="">
+
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="assets/images/comic/3.png" alt="" srcset="">
+
+                    </li>
+                    <li class="carousel_slide">
+                        <img class="carousel_image" src="assets/images/comic/4.png" alt="" srcset="">
+
+                    </li>
+
+                </ul>
+            </div>
+            <button class="carousel_button button--right">
+                <img src="assets/images/right.png" alt="" srcset="">
+            </button>
+
+            <div class="carousel_nav">
+                <button class="carousel_indicator current-slide"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+                <button class="carousel_indicator"></button>
+            </div>
         </div>
-       <p>
+        
+       <p class="project_description">
            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rerum nesciunt temporibus inventore autem 
            delectus sapiente eligendi officia natus. Deserunt asperiores, aperiam exercitationem pariatur tempore nihil 
            eligendi quia recusandae id.
 
        </p>
 
-        
+       <script src="js/projects.js"></script>
+
     </div>
 </body>
 </html>
