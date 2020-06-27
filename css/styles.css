@@ -142,6 +142,7 @@ video.video {
     #canvas1{
         display: none;
     }
+    
    
   }
 
@@ -183,4 +184,54 @@ p{
     margin-bottom: 50px;
     
 }
-  
+
+/* Alert */
+.muteImg{
+    height: 25px;
+    width: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+#alert{
+    position: absolute;
+    left: 20%;
+    top: 6%;
+    
+}
+#mute{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#unmute{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    display: none;
+}
+.hide{
+    display: hidden;
+}
+
+@media only screen and (max-width: 900px) {
+    #alert{
+        position: absolute;
+        left: 18%;
+        top: 3%;
+        
+    }
+}
+@media only screen and (max-width: 700px) {
+    #alert{
+        position: absolute;
+        left: 12%;
+        top: 3%;
+        
+    }
+}

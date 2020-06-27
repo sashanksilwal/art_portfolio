@@ -18,7 +18,7 @@ function draw(){
         p.draw();
         p.checkParticle(particles.slice(index));
     });
-    console.log(frameCount);
+    // console.log(frameCount);
     
     //to change the position of the text after 60 frames
     if (frameCount % 80 == 0){

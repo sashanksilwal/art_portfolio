@@ -9,15 +9,9 @@ var sound_wave_Video = document.querySelector("#sound-video");
 var audioSound = document.querySelector("#sound-audio");
 var videographyVideo = document.querySelector("#videography-video");
 
-var alertDisplayed = false;
-
-
 //to play the sound when hover
 audio.addEventListener("mouseenter", function (event) {
-    if (!alertDisplayed){
-        confirm("To play sound press anywhere on the screen first");
-        alertDisplayed = true;
-    }
+    
     sound_wave_Video.style.opacity = 1;
     audioSound.play();
   });
@@ -65,3 +59,21 @@ window.addEventListener("load", ()=>{
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
 });
+
+
+function muteAudio(){
+  let muteAudio = document.getElementById("mute");
+  let playAudio = document.getElementById("unmute")
+  audioSound.muted = false;
+  muteAudio.style.display = "none";
+  playAudio.style.display = "block";
+
+}
+
+function unmuteAudio(){
+  let muteAudio = document.getElementById("mute");
+  let playAudio = document.getElementById("unmute")
+  audioSound.muted = true;
+  muteAudio.style.display = "block";
+  playAudio.style.display = "none";
+}
