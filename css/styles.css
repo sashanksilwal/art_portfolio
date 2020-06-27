@@ -152,6 +152,7 @@ video.video {
     /* width: 110%; */
     position: -webkit-sticky; 
     position: sticky;
+    z-index: 10;
     top: 0;
   }
   .gallery-container{
@@ -173,3 +174,13 @@ video.video {
     margin-top: 2%;
 }
 /* --------------Projects Start here ----------------- */
+.subHeading{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    margin-bottom: 50px;
+    
+}
+  
