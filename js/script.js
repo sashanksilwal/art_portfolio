@@ -38,6 +38,7 @@ web.addEventListener("mouseout", function (event) {
 //display the programming video
 about.addEventListener("mouseenter", function (event) {
     aboutHTML.style.opacity = 1;
+    // document.body.style.color  = "white";
   });
 
 about.addEventListener("mouseout", function (event) {
